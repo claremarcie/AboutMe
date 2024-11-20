@@ -1,0 +1,209 @@
+/* Styles shared between pages */
+
+body {
+    background-color: #f8eaed;
+}
+
+div {
+    padding: 2%;
+}
+
+p {
+    font-family: "Inter", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.Text {
+    max-width: 30vw;
+}
+
+a.NavButton {
+    color: #fc8eac;
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #ff007f; /* Shadow effect learned from W3 schools: https://www.w3schools.com/cssref/css3_pr_text-shadow.php */
+}
+
+a.NavButton:hover { /* Animated element */
+    color: #ff007f;
+    animation-name: scale;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+/* Animation code for navigation buttons */
+@keyframes scale {
+    0% {}
+    100% {transform: scale(1.5)}
+}
+
+.Buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0% 0% 5% 0%
+}
+
+/* Page 1 styles */
+
+h1 { /* Animated element */
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6em;
+    color: #fc8eac;
+    text-shadow: 1px 1px 1px #ff007f;
+    animation-name: wiggle;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+/* Animation code for h1, courtesy of: https://blog.hubspot.com/website/css-animation-examples */
+@keyframes wiggle {
+    0%, 7% {transform: rotateZ(0);}
+    15% {transform: rotateZ(-15deg);}
+    20% {transform: rotateZ(10deg);}
+    25% {transform: rotateZ(-10deg);}
+    30% {transform: rotateZ(6deg);}
+    35% {transform: rotateZ(-4deg);}
+    40%, 100% {transform: rotateZ(0);}
+}
+
+.Container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 1% 1% 1% 1%;
+}
+
+.Image1 {
+    height: 100vh;
+    width: 45vw;
+    object-fit: cover;
+    filter: grayscale(100%);
+    /* Filter effect learned from W3 Schools: https://www.w3schools.com/HOWTO/howto_css_image_bw.asp */
+}
+
+.Container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5% 1% 1% 1%;
+}
+
+.Image2 {
+    height: 80vh;
+    width: 50vw;
+    object-fit: cover;
+}
+
+.Container3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 5% 1% 1% 1%;
+}
+
+.SubContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Image3, .Image4, .Image5 {
+    height: 60vh;
+    width: 20vw;
+    object-fit: cover;
+}
+
+/* Page 2 styles */
+
+body.Background {
+    background-image: url(../Assets/Background.jpeg); /* Learned from W3 schools: https://www.w3schools.com/cssref/pr_background-image.php */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: 2% 2% 6% 2%;
+}
+
+table {
+    border: hidden;
+    margin: 2%;
+    text-align: center;
+    max-width: 70vw;
+}
+
+th {
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    color: #fc8eac; 
+    padding: 10px;
+}
+
+td {
+    font-family: "Inter", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    padding: 10px;
+    width: 5%;
+}
+
+/* Page 3 styles */
+
+.Container4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2% 2% 0% 2%;
+}
+
+.SubContainer2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.Video, .Image6 {
+    height: 60vh;
+    width: 20vw;
+    object-fit: cover;
+    filter: grayscale(100%);
+    padding: 1%;
+}
+
+h3 {
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    color: #fc8eac; 
+    padding: 10px; 
+}
+
+li {
+    font-family: "Inter", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    padding: 1.5%;
+    width: 25vw;
+}
+
+
+
+
